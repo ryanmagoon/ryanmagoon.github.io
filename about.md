@@ -12,4 +12,4 @@ I'm a software developer, writer, and salesman from the heart of Raleigh, North 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[mr.magoon5@gmail.com](mailto:mr.magoon5@gmail.com)
