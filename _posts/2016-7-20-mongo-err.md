@@ -1,6 +1,6 @@
 ---
 layout: post
-title: mongodb: Error: connect ECONNREFUSED 127.0.0.1:27017
+title: mongodb - error connection refused
 ---
 
 If you get this error, it usually means that mongo is not running.
