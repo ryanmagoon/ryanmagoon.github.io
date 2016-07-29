@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'ValidationSummary' does not contain a definition for 'ValidationSummary' - ASP.NET Core
+title: ValidationSummary does not contain a definition for ValidationSummary - ASP.NET Core
 ---
 
 If you are getting the error "ValidationSummary does not contain a definition for ValidationSummary", that's because the namespace that includes ValidationSummary is already included.
