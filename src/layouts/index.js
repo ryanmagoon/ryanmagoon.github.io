@@ -13,7 +13,9 @@ const Layout = ({ children, data }) => (
         { name: 'viewport', content: 'width=device-width' },
         { name: 'keywords', content: 'javascript, react native, react' },
       ]}
-    />
+    >
+      <meta name="viewport" content="width=device-width" />
+    </Helmet>
     <Header siteTitle={data.site.siteMetadata.title} />
     {children()}
     <Footer />
