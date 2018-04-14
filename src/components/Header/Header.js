@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Link as ScrollLink } from 'react-scroll'
+import { Element, Link as ScrollLink } from 'react-scroll'
 import Link from 'gatsby-link'
 
 import { Letter, Work } from '../../components'
@@ -8,30 +8,39 @@ import { Letter, Work } from '../../components'
 import styles from './header.module.css'
 
 const Header = ({ siteTitle }) => (
-  <div className={styles.headWrapper}>
+  <Element name="home" className={styles.headWrapper}>
     <header className={styles.header}>
       <nav className={styles.navigation}>
         <ul id="primary-menu" className={styles.menu}>
           <li className={styles.li}>
-            <a className={styles.link} href="/">
+            <ScrollLink
+              className={styles.link}
+              to="home"
+              smooth={true}
+              duration={500}
+            >
               Home
-            </a>
+            </ScrollLink>
           </li>
           <li className={styles.li}>
             <ScrollLink
               className={styles.link}
               to="work"
               smooth={true}
-              offset={50}
               duration={500}
             >
               Work
             </ScrollLink>
           </li>
           <li className={styles.li}>
-            <a className={styles.link} href="#about">
+            <ScrollLink
+              className={styles.link}
+              to="about"
+              smooth={true}
+              duration={500}
+            >
               About
-            </a>
+            </ScrollLink>
           </li>
         </ul>
       </nav>
@@ -46,7 +55,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </header>
     <Letter />
-  </div>
+  </Element>
 )
 
 export default Header
