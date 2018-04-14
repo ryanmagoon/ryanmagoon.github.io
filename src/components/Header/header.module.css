@@ -1,0 +1,146 @@
+.active {
+  color: #cc65b1;
+}
+
+.emoji {
+  text-shadow: none;
+  font-size: 7vw;
+}
+
+.h1 {
+  font-size: 2.5vw;
+  font-family: 'Press Start 2P';
+  text-transform: lowercase;
+  margin-bottom: 3vw;
+  margin-top: 5vw;
+  align-self: center;
+}
+
+.header {
+  width: 100%;
+  min-width: 320px;
+  color: whitesmoke;
+  text-transform: lowercase;
+  margin-right: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.p {
+  font-size: 2vw;
+  margin-left: 3vw;
+}
+
+.p:last-of-type {
+  margin-bottom: 0;
+}
+
+.headWrapper {
+  min-width: 100vw;
+  display: flex;
+}
+
+.line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5vw;
+  font-family: 'space mono';
+  margin-bottom: 3vw;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+  color: #cc65b1;
+}
+
+.menu {
+  width: 55%;
+  display: flex;
+  font-family: 'Press Start 2P';
+  justify-content: center;
+  margin-left: 7%;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.6vw;
+}
+
+.li:first-child {
+  margin-right: 2.5rem;
+}
+
+.li:last-child {
+  margin-left: 2.5rem;
+}
+
+.navigation {
+  background: black;
+  width: 200%;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  margin-bottom: 3vw;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: whitesmoke;
+  position: fixed;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .headWrapper {
+    flex-direction: column;
+  }
+
+  .h1 {
+    font-size: 15vw;
+    margin-left: 0;
+    margin-bottom: 12vw;
+    margin-top: 10vw;
+  }
+
+  .header {
+    text-align: center;
+    margin: 0;
+  }
+
+  .line {
+    align-items: center;
+    margin-left: 24vw;
+    margin-bottom: 7vw;
+  }
+
+  .line:last-of-type {
+    margin-bottom: 12vw;
+  }
+
+  .menu {
+    width: 100%;
+    max-width: 320px;
+    font-size: 5vw;
+    margin-left: 0;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .p {
+    text-align: justify;
+    font-size: 5vw;
+    margin-left: 7vw;
+  }
+
+  .wrapper {
+    overflow: hidden;
+  }
+}
